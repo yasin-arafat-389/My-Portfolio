@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Fetch projects from server and render them
   const fetchProjects = async () => {
     try {
-      const response = await fetch("http://localhost:5000/projects");
+      const response = await fetch(
+        "https://portfolio-server-nine-theta.vercel.app/projects"
+      );
       const data = await response.json();
 
       // Clear previous projects
