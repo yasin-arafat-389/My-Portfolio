@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Function to fetch skills from the API endpoint
   const fetchSkills = () => {
-    fetch("http://localhost:5000/skills", {
+    fetch("https://portfolio-server-nine-theta.vercel.app/skills", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Fetching experiences
 document.addEventListener("DOMContentLoaded", () => {
   // Server endpoint to fetch experiences
-  const endpoint = "http://localhost:5000/experience";
+  const endpoint = "https://portfolio-server-nine-theta.vercel.app/experience";
 
   // Function to fetch and render experiences
   const fetchExperiences = () => {
